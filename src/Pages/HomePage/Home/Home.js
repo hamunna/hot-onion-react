@@ -48,6 +48,9 @@ const Home = () => {
 							<Dinners></Dinners>
 						</Route>
 					</Switch>
+					<div className="text-center my-5">
+					<button className="btn btn-warning">Checkout Your Food</button>
+					</div>
 				</Router>
 			</div>
 		</div>
