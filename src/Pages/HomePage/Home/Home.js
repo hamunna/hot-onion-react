@@ -11,6 +11,7 @@ import Breakfasts from '../../HomePage/MealsSection/BreakfastSection/Breakfasts/
 import Dinners from '../../HomePage/MealsSection/DinnerSection/Dinners/Dinners';
 import Lunches from '../../HomePage/MealsSection/LunchSection/Lunches/Lunches';
 import WhyUs from '../WhyUs/WhyUs';
+import Footer from '../../Footer/Footer';
 
 const Home = () => {
 	return (
@@ -57,6 +58,9 @@ const Home = () => {
 
 			{/* Why Us Section */}
 			<WhyUs></WhyUs>
+
+			{/* Footer Section */}
+			<Footer></Footer>
 		</div>
 	);
 };
