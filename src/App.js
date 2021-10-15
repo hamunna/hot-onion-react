@@ -1,17 +1,13 @@
 import './App.css';
-import Home from './Pages/HomePage/Home/Home';
-import Header from './Pages/Header/Header';
-import Signup from './Pages/Signup/Signup';
-import Login from './Pages/Login/Login';
+import Delivered from './Pages/DeliveryProgress/Delivered/Delivered';
+
+import PlaceOrder from './Pages/PlaceOrder/PlaceOrder';
 
 function App() {
   return (
     <>
-      {/* <Header></Header>
-      <Home></Home> */}
-
-      {/* <Signup></Signup> */}
-      <Login></Login>
+      
+      <Delivered></Delivered>
       
     </>
   );
