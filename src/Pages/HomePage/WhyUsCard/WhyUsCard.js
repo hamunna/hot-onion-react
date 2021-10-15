@@ -1,21 +1,31 @@
 import React from 'react';
+import { Card, Col } from 'react-bootstrap';
 
-const WhyUsCard = () => {
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowAltCircleRight } from '@fortawesome/free-solid-svg-icons'
+
+const rightArrow = <FontAwesomeIcon icon={faArrowAltCircleRight} />
+
+const WhyUsCard = ({ whyCard }) => {
+	const { image, title, description, icon } = whyCard;
+
 	return (
 		<div>
 			<Col>
-				<Card>
-					<Card.Img variant="top" src="holder.js/100px160" />
-					<Card.Body>
-						<Card.Title>Card title</Card.Title>
-						<Card.Text>
-							This is a longer card with supporting text below as a natural
-							lead-in to additional content. This content is a little bit longer.
-						</Card.Text>
+				<Card style={{border: "none"}}>
+					<Card.Img variant="top" src={image} />
+					<Card.Body className="d-flex">
+						<div className="mx-3"><img src={icon} alt="" /></div>
+						<div>
+							<Card.Title className="h6 fw-bold">{title}</Card.Title>
+
+							<Card.Text style={{fontSize: "13px"}}>{description}</Card.Text>
+
+							<Card.Link style={{color: 'crimson'}} href="#" className="text-decoration-none fw-bold">See more <span>{rightArrow}</span></Card.Link>
+						</div>
 					</Card.Body>
 				</Card>
 			</Col>
-		</Row>
 		</div >
 	);
 };

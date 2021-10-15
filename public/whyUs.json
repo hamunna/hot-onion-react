@@ -2,6 +2,22 @@
 	{
 		"id": 1,
 		"title": "Fast Delivery",
-		
+		"description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.",
+		"image": "https://i.ibb.co/rGJgD2j/why-us-1.png",
+		"icon": "https://i.ibb.co/SdNnKp6/Group-204.png"
+	},
+	{
+		"id": 2,
+		"title": "A Good Auto Responder",
+		"description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.",
+		"image": "https://i.ibb.co/Wnr30z3/why-us-2.png",
+		"icon": "https://i.ibb.co/GR4wvkC/Group-1133.png"
+	},
+	{
+		"id": 3,
+		"title": "Home Delivery",
+		"description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you.",
+		"image": "https://i.ibb.co/wMFnnDg/why-us-3.png",
+		"icon": "https://i.ibb.co/0s0vpkb/Group-245.png"
 	}
 ]
