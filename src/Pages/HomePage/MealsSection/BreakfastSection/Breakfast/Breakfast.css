@@ -1,0 +1,9 @@
+.card-self-styles{
+	border: none;
+}
+
+
+.card-self-styles:hover {
+	border: 3px solid #eee;
+	transition: border ease .5;
+}

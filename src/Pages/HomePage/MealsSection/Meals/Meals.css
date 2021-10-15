@@ -1,0 +1,11 @@
+.meals-nav-link:link {
+	color: #232425;
+}
+.meals-nav-link:hover {
+	border-bottom: 2px solid crimson;
+	color: crimson;
+}
+/* 
+.meals-nav-link#active {
+	color: yellow;
+} */
