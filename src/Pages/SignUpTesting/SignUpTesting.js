@@ -14,6 +14,7 @@ const SignUpTesting = () => {
 	const [password, setPassword] = useState('');
 	const [confirmPassword, setConfirmPassword] = useState('');
 	const [error, setError] = useState('');
+	const [successMsg, setSuccessMsg] = useState('');
 
 	// Creating auth
 	const auth = getAuth();
@@ -23,13 +24,19 @@ const SignUpTesting = () => {
 		e.preventDefault();
 		console.log(name, email, password, confirmPassword);
 
-		if (password.length < 6) {
-			setError("Password must be 6 character long!");
+		if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(password)) {
+			setError("Password must be 8 characters with letter and number combination!");
+			setSuccessMsg("");
 			return;
-			
+
 		} else if (password !== confirmPassword) {
 			setError("Password doesn't match!");
+			setSuccessMsg("");
 			return;
+
+		} else {
+			setError("");
+			setSuccessMsg("Sing Up Successfully!");
 		}
 		// Creating New User
 		createUserWithEmailAndPassword(auth, email, password)
@@ -75,7 +82,8 @@ const SignUpTesting = () => {
 							<input onBlur={handleConfirmPasswordChange} type="password" placeholder="Confirm Password" />
 							<br />
 
-							<h5 className="text-danger">{error}</h5>
+							<p className="text-danger"><small>{error}</small></p>
+							<h5 className="text-success">{successMsg}</h5>
 
 							<button type="submit">Sign up</button>
 
