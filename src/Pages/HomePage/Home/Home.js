@@ -25,6 +25,7 @@ const Home = () => {
 						<input id="search-input" type="search" placeholder="Search food items" className="p-3" />
 						<button id="search-btn">Search</button>
 					</div>
+					
 				</div>
 			</div>
 
@@ -60,7 +61,7 @@ const Home = () => {
 			<WhyUs></WhyUs>
 
 			{/* Footer Section */}
-			<Footer></Footer>
+			{/* <Footer></Footer> */}
 		</div>
 	);
 };

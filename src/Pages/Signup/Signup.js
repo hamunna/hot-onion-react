@@ -1,8 +1,11 @@
 import React from 'react';
+import useFirebase from '../../hooks/useFirebase';
 import logo from '../../images/logo2.png';
 import './Signup.css';
 
 const Signup = () => {
+	const allContext = useFirebase();
+
 	return (
 		<div className="signing-page">
 			<div className="container d-flex justify-content-center mt-5">
@@ -23,7 +26,7 @@ const Signup = () => {
 							<input type="password" placeholder="Confirm Password" />
 							<br />
 
-							<button>Sign up</button>
+							<button type="submit">Sign up</button>
 
 						</form>
 

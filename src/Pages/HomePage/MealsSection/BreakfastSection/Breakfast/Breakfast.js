@@ -4,11 +4,11 @@ import './Breakfast.css';
 
 const Breakfast = ({ breakfast }) => {
 
-	const { image, title, description, price, category } = breakfast;		
-	
+	const { image, title, description, price, category } = breakfast;
+
 	return (
 		<>
-			{ category === "breakfast" &&
+			{category === "breakfast" &&
 				<Col className="text-center">
 					<Card className="card-self-styles">
 						<Card.Img variant="top" className="w-75 mx-auto" src={image} />
