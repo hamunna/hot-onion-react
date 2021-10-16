@@ -20,7 +20,7 @@ const useFirebase = () => {
 			.then(result => {
 				const user = result.user;
 				console.log(user);
-				
+
 			});
 	}
 
